@@ -3,6 +3,7 @@ import './App.css';
 
 import BurgerStack from './components/BurgerStack/BurgerStack';
 import IngredientList from './components/IngredientList/IngredientList';
+import Ingredient from './components/Ingredient/Ingredient';
 
 const App = () => {
   const [stack, setStack] = useState([]);
@@ -36,6 +37,7 @@ const App = () => {
       <section>
         <IngredientList ingredients={availableIngredients} addToBurger={addToBurger} /> 
         <BurgerStack stack={stack} removeFromBurger={removeFromBurger} />
+        <Ingredient />
       </section>
     </main>
   );
